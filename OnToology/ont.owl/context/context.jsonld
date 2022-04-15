@@ -1,0 +1,43 @@
+{
+  "@context" : {
+    "Platform" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode"
+    },
+    "TVSeries" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries"
+    },
+    "OnDemand" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnDemand"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person"
+    },
+    "Writer" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer"
+    },
+    "Award" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Award"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor"
+    },
+    "Producer" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Producer"
+    },
+    "Broadcast" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Broadcast"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season"
+    }
+  }
+}

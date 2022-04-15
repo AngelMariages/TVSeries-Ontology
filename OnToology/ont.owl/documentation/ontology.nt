@@ -1,0 +1,56 @@
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Award
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Award> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Broadcast
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Broadcast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Broadcast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnDemand
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnDemand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnDemand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Producer
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
