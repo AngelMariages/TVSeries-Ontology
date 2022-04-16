@@ -3,6 +3,146 @@
 # 
 # #################################################################
 # #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "nonbinary" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "male" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "female" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#oneOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "dead" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "alive" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    Classes
 # #
 # #################################################################
@@ -15,12 +155,53 @@
 # http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Award
 <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Award> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Broadcast
-<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Broadcast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Broadcast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> .
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
 # 
 # http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character
 <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
 # 
 # http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director
 <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -29,9 +210,17 @@
 # http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode
 <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnDemand
-<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnDemand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnDemand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> .
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
 # 
 # http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person
 <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -45,12 +234,77 @@
 # 
 # http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season
 <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
 # 
 # http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries
 <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer
 <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Abel_Teller
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Abel_Teller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "dead" .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "dead" .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "dead" .
+# 
+# http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller_II
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller_II> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller_II> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller_II> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller_II> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "alive" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
