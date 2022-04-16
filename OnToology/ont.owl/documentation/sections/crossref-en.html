@@ -34,6 +34,12 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
+         <a href="#Episode"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode">
+            <span>episode</span>
+         </a>
+      </li>
+      <li>
          <a href="#Faction"
             title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction">
             <span>faction</span>
@@ -52,6 +58,36 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
+         <a href="#OnlinePlatform"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnlinePlatform">
+            <span>online platform</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Partner"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner">
+            <span>partner</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Person"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person">
+            <span>person</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PhisicalPlatform"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#PhisicalPlatform">
+            <span>phisical platform</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Platform"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform">
+            <span>platform</span>
+         </a>
+      </li>
+      <li>
          <a href="#Producer"
             title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Producer">
             <span>producer</span>
@@ -61,6 +97,12 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#Season"
             title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season">
             <span>season</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ShowElement"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement">
+            <span>show element</span>
          </a>
       </li>
       <li>
@@ -95,11 +137,13 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor</p>
+      <div class="comment">
+         <span class="markdown">An actor of some character</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person"
-               target="_blank"
+            <a href="#Person"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person">person</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -118,24 +162,15 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother</p>
+      <div class="comment">
+         <span class="markdown">A male sibling</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#Character"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#isSibling"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling">is sibling</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasSibling"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling">has sibling</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -146,11 +181,13 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character</p>
+      <div class="comment">
+         <span class="markdown">A protrayed Character in a TVShow</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement"
-               target="_blank"
+            <a href="#ShowElement"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement">show element</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -164,6 +201,8 @@ This section provides details for each class and property defined by [Ontology N
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father">father</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Mother"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother">mother</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Partner"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner">partner</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Sister"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister">sister</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Son"
@@ -174,37 +213,25 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#appearsIn"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn">appears in</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasParent"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent">has parent</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasSibling"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling">has sibling</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isMarried"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried">is married</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isMemberOf"
+            <sup class="type-op" title="object property">op</sup>, <a href="#gender"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isMemberOf"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf">is member of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isPortrayedBy"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy">is portrayed by</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-op" title="object property">op</sup>, <a href="#status"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status">status</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasMember"
+            <a href="#hasCast"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast">has cast</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasMember"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember">has member</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isMarried"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried">is married</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isParent"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent">is parent</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isSibling"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling">is sibling</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#portrays"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays">portrays</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#Jax"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax">jax</a>
-            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
@@ -215,6 +242,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter</p>
+      <div class="comment">
+         <span class="markdown">A female offspring</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -231,13 +261,63 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director</p>
+      <div class="comment">
+         <span class="markdown">A director of some TVSeries</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person"
-               target="_blank"
+            <a href="#Person"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person">person</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDirected"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasDirected">has directed</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#directedBy"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy">directed by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Episode">
+      <h3>episode<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#directedBy"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy">directed by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#episodeFrom"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#episodeFrom">episode from</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasCast"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast">has cast</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#writtenBy"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy">written by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#appearsIn"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn">appears in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasDirected"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasDirected">has directed</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasEpisode"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode">has episode</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasWrited"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited">has writed</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -248,11 +328,13 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction</p>
+      <div class="comment">
+         <span class="markdown">A TVShow gang</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement"
-               target="_blank"
+            <a href="#ShowElement"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement">show element</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -277,24 +359,15 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father</p>
+      <div class="comment">
+         <span class="markdown">A male parent</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#Character"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#isParent"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent">is parent</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasParent"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent">has parent</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -305,6 +378,53 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother</p>
+      <div class="comment">
+         <span class="markdown">A female parent</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Character"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="OnlinePlatform">
+      <h3>online platform<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnlinePlatform</p>
+      <div class="comment">
+         <span class="markdown">A platform available through the Internet</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Platform"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform">platform</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Netflix"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Netflix">netflix</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Partner">
+      <h3>partner<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner</p>
+      <div class="comment">
+         <span class="markdown">A person whom someone is married to</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -314,14 +434,91 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#isParent"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent">is parent</a>
+            <a href="#isMarried"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried">is married</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasParent"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent">has parent</a>
+            <a href="#isMarried"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried">is married</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Person">
+      <h3>person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person</p>
+      <div class="comment">
+         <span class="markdown">A real world person involved in the multimedia industry</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Actor"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor">actor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Director"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director">director</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Producer"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Producer">producer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Writer"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer">writer</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isPortrayedBy"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy">is portrayed by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PhisicalPlatform">
+      <h3>phisical platform<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#PhisicalPlatform</p>
+      <div class="comment">
+         <span class="markdown">A Platform available in the real world</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Platform"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform">platform</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Platform">
+      <h3>platform<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform</p>
+      <div class="comment">
+         <span class="markdown">A platform to obtain/rent a TVSeries</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#OnlinePlatform"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnlinePlatform">online platform</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PhisicalPlatform"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#PhisicalPlatform">phisical platform</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#availableAt"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#availableAt">available at</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -333,11 +530,13 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Producer</p>
+      <div class="comment">
+         <span class="markdown">A producer of some TVSeries</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person"
-               target="_blank"
+            <a href="#Person"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person">person</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -350,6 +549,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season</p>
+      <div class="comment">
+         <span class="markdown">A series of episodes grouped in a Season</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
@@ -357,13 +559,38 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#hasEpisode"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode">has episode</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#seasonFrom"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#seasonFrom">season from</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasSeason"
+            <a href="#episodeFrom"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#episodeFrom">episode from</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSeason"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason">has season</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ShowElement">
+      <h3>show element<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement</p>
+      <div class="comment">
+         <span class="markdown">An element part of a TVShow</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Character"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Faction"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction">faction</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -374,24 +601,15 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister</p>
+      <div class="comment">
+         <span class="markdown">A female sibling</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#Character"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#isSibling"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling">is sibling</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasSibling"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling">has sibling</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -402,6 +620,9 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son</p>
+      <div class="comment">
+         <span class="markdown">A male offspring</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -418,13 +639,24 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries</p>
+      <div class="comment">
+         <span class="markdown">An audiovisual program</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasSeason"
+            <a href="#availableAt"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#availableAt">available at</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSeason"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason">has season</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#seasonFrom"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#seasonFrom">season from</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -436,13 +668,27 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer</p>
+      <div class="comment">
+         <span class="markdown">A writer of the script of some TVSeries</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person"
-               target="_blank"
+            <a href="#Person"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person">person</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasWrited"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited">has writed</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#writtenBy"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy">written by</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -453,6 +699,42 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#appearsIn"
             title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn">
             <span>appears in</span>
+         </a>
+      </li>
+      <li>
+         <a href="#availableAt"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#availableAt">
+            <span>available at</span>
+         </a>
+      </li>
+      <li>
+         <a href="#directedBy"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy">
+            <span>directed by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#episodeFrom"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#episodeFrom">
+            <span>episode from</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasAvailable"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasAvailable">
+            <span>has available</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasCast"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast">
+            <span>has cast</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasDirected"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasDirected">
+            <span>has directed</span>
          </a>
       </li>
       <li>
@@ -483,6 +765,12 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#hasSibling"
             title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling">
             <span>has sibling</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasWrited"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited">
+            <span>has writed</span>
          </a>
       </li>
       <li>
@@ -521,6 +809,18 @@ This section provides details for each class and property defined by [Ontology N
             <span>portrays</span>
          </a>
       </li>
+      <li>
+         <a href="#seasonFrom"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#seasonFrom">
+            <span>season from</span>
+         </a>
+      </li>
+      <li>
+         <a href="#writtenBy"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy">
+            <span>written by</span>
+         </a>
+      </li>
    </ul>
    <div class="entity" id="appearsIn">
       <h3>appears in<sup class="type-op" title="object property">op</sup>
@@ -545,10 +845,213 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode"
-                  target="_blank"
+               <a href="#Episode"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode">episode</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasCast"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast">has cast</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="availableAt">
+      <h3>available at<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#availableAt</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TVSeries"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries">t v series</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Platform"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform">platform</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasAvailable"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasAvailable">has available</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="directedBy">
+      <h3>directed by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Episode"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode">episode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Director"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director">director</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasDirected"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasDirected">has directed</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="episodeFrom">
+      <h3>episode from<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#episodeFrom</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Episode"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode">episode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Season"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season">season</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasEpisode"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode">has episode</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasAvailable">
+      <h3>has available<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasAvailable</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#availableAt"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#availableAt">available at</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCast">
+      <h3>has cast<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Episode"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode">episode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Character"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#appearsIn"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn">appears in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDirected">
+      <h3>has directed<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasDirected</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Director"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director">director</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Episode"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode">episode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#directedBy"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy">directed by</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -576,10 +1079,15 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode"
-                  target="_blank"
+               <a href="#Episode"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode">episode</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#episodeFrom"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#episodeFrom">episode from</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -637,17 +1145,20 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Character"
-                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
+               <a href="#Daughter"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter">daughter</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Son"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son">son</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Father"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father">father</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Mother"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother">mother</a>
                <sup class="type-c" title="class">c</sup>
@@ -688,6 +1199,12 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season">season</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#seasonFrom"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#seasonFrom">season from</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -708,17 +1225,20 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Character"
-                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
+               <a href="#Brother"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother">brother</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Sister"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister">sister</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Brother"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother">brother</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Sister"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister">sister</a>
                <sup class="type-c" title="class">c</sup>
@@ -727,6 +1247,36 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#isSibling"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling">is sibling</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasWrited">
+      <h3>has writed<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Writer"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer">writer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Episode"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode">episode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#writtenBy"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy">written by</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -749,15 +1299,23 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Character"
-                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
+               <a href="#Partner"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner">partner</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Character"
-                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
+               <a href="#Partner"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner">partner</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isMarried"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried">is married</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isMarried"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried">is married</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -817,17 +1375,20 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#Father"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father">father</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Mother"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother">mother</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Character"
-                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
+               <a href="#Daughter"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter">daughter</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Son"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son">son</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -862,8 +1423,7 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person"
-                  target="_blank"
+               <a href="#Person"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person">person</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -895,17 +1455,20 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#Brother"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother">brother</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Sister"
                   title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister">sister</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Character"
-                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
+               <a href="#Brother"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother">brother</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Sister"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister">sister</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -953,6 +1516,78 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
+   <div class="entity" id="seasonFrom">
+      <h3>season from<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#seasonFrom</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Season"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season">season</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TVSeries"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries">t v series</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasSeason"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason">has season</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="writtenBy">
+      <h3>written by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Episode"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode">episode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Writer"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer">writer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasWrited"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited">has writed</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
@@ -978,8 +1613,14 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Character"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
-            <dd>{ "female" , "male" , "nonbinary" }</dd>
+            <dd>{ "female" , "male" }</dd>
          </dl>
       </div>
    </div>
@@ -992,6 +1633,12 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Character"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>{ "alive" , "dead" }</dd>
          </dl>
@@ -1000,6 +1647,30 @@ This section provides details for each class and property defined by [Ontology N
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
+      <li>
+         <a href="#Abel_Teller"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Abel_Teller">
+            <span>abel teller</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Alvarez"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Alvarez">
+            <span>alvarez</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Clay_Morrow"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow">
+            <span>clay morrow</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Gemma_Teller_Morrow"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow">
+            <span>gemma teller morrow</span>
+         </a>
+      </li>
       <li>
          <a href="#Jax"
             title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax">
@@ -1010,6 +1681,66 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#John_Teller"
             title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller">
             <span>john teller</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Kurt_Sutter"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter">
+            <span>kurt sutter</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Netflix"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Netflix">
+            <span>netflix</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Otto_Delaney"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Otto_Delaney">
+            <span>otto delaney</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Pilot"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot">
+            <span>pilot</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Ron_Perlman"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Ron_Perlman">
+            <span>ron perlman</span>
+         </a>
+      </li>
+      <li>
+         <a href="#SAMCRO"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SAMCRO">
+            <span>s a m c r o</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Season_1"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season_1">
+            <span>season 1</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Seeds"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Seeds">
+            <span>seeds</span>
+         </a>
+      </li>
+      <li>
+         <a href="#SonsOfAnarchy"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SonsOfAnarchy">
+            <span>sons of anarchy</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Tara_Knowles"
+            title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles">
+            <span>tara knowles</span>
          </a>
       </li>
       <li>
@@ -1025,6 +1756,122 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
    </ul>
+   <div class="entity" id="Abel_Teller">
+      <h3>abel teller<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Abel_Teller</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasParent"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent">has parent</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Jax"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax">jax</a>
+         </dd>
+         <dd>
+            <a href="#gender"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"male"^^<a href="#gender"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            </span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Alvarez">
+      <h3>alvarez<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Alvarez</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#isMemberOf"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf">is member of</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mayans"
+               target="_blank"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mayans">mayans</a>
+         </dd>
+         <dd>
+            <a href="#gender"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"male"^^<a href="#gender"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#status"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status">status</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"alive"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Clay_Morrow">
+      <h3>clay morrow<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#isMarried"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried">is married</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Gemma_Teller_Morrow"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow">gemma teller morrow</a>
+         </dd>
+         <dd>
+            <a href="#gender"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"male"^^<a href="#gender"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#status"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status">status</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"dead"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Gemma_Teller_Morrow">
+      <h3>gemma teller morrow<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#gender"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"female"^^<a href="#gender"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#status"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status">status</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"dead"</span>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Jax">
       <h3>jax<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -1033,13 +1880,21 @@ This section provides details for each class and property defined by [Ontology N
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax</p>
       <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Character"
-               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character">character</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>has facts</dt>
+         <dd>
+            <a href="#appearsIn"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn">appears in</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Pilot"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot">pilot</a>
+         </dd>
+         <dd>
+            <a href="#hasParent"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent">has parent</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Gemma_Teller_Morrow"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow">gemma teller morrow</a>
+         </dd>
          <dd>
             <a href="#hasParent"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent">has parent</a>
@@ -1059,7 +1914,9 @@ This section provides details for each class and property defined by [Ontology N
             <a href="#gender"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
             <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"male"</span>
+            <span class="literal">"male"^^<a href="#gender"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            </span>
          </dd>
          <dd>
             <a href="#status"
@@ -1082,7 +1939,297 @@ This section provides details for each class and property defined by [Ontology N
             <a href="#gender"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
             <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"male"</span>
+            <span class="literal">"male"^^<a href="#gender"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#status"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status">status</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"dead"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Kurt_Sutter">
+      <h3>kurt sutter<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasWrited"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited">has writed</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Pilot"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot">pilot</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Netflix">
+      <h3>netflix<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Netflix</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#OnlinePlatform"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnlinePlatform">online platform</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasAvailable"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasAvailable">has available</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#SonsOfAnarchy"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SonsOfAnarchy">sons of anarchy</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Otto_Delaney">
+      <h3>otto delaney<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Otto_Delaney</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#isPortrayedBy"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy">is portrayed by</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Kurt_Sutter"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter">kurt sutter</a>
+         </dd>
+         <dd>
+            <a href="#gender"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"male"^^<a href="#gender"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#status"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status">status</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"dead"</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Pilot">
+      <h3>pilot<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#directedBy"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy">directed by</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Allen_Coulter"
+               target="_blank"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Allen_Coulter">allen coulter</a>
+         </dd>
+         <dd>
+            <a href="#hasCast"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast">has cast</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Gemma_Teller_Morrow"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow">gemma teller morrow</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Ron_Perlman">
+      <h3>ron perlman<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Ron_Perlman</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#portrays"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays">portrays</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Clay_Morrow"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow">clay morrow</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SAMCRO">
+      <h3>s a m c r o<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SAMCRO</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasMember"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember">has member</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Gemma_Teller_Morrow"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow">gemma teller morrow</a>
+         </dd>
+         <dd>
+            <a href="#hasMember"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember">has member</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Jax"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax">jax</a>
+         </dd>
+         <dd>
+            <a href="#hasMember"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember">has member</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Tara_Knowles"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles">tara knowles</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Season_1">
+      <h3>season 1<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season_1</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasEpisode"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode">has episode</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Fun_Town"
+               target="_blank"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Fun_Town">fun town</a>
+         </dd>
+         <dd>
+            <a href="#hasEpisode"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode">has episode</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Giving_Back"
+               target="_blank"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Giving_Back">giving back</a>
+         </dd>
+         <dd>
+            <a href="#hasEpisode"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode">has episode</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Patch_Over"
+               target="_blank"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Patch_Over">patch over</a>
+         </dd>
+         <dd>
+            <a href="#hasEpisode"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode">has episode</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Pilot"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot">pilot</a>
+         </dd>
+         <dd>
+            <a href="#hasEpisode"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode">has episode</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Seeds"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Seeds">seeds</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Seeds">
+      <h3>seeds<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Seeds</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasCast"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast">has cast</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Gemma_Teller_Morrow"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow">gemma teller morrow</a>
+         </dd>
+         <dd>
+            <a href="#hasCast"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast">has cast</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Jax"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax">jax</a>
+         </dd>
+         <dd>
+            <a href="#hasCast"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast">has cast</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Tara_Knowles"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles">tara knowles</a>
+         </dd>
+         <dd>
+            <a href="#writtenBy"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy">written by</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Kurt_Sutter"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter">kurt sutter</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SonsOfAnarchy">
+      <h3>sons of anarchy<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SonsOfAnarchy</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#hasSeason"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason">has season</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Season_1"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season_1">season 1</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tara_Knowles">
+      <h3>tara knowles<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#isMarried"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried">is married</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#Jax"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax">jax</a>
+         </dd>
+         <dd>
+            <a href="#gender"
+               title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"female"^^<a href="#gender"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            </span>
          </dd>
          <dd>
             <a href="#status"
@@ -1112,7 +2259,9 @@ This section provides details for each class and property defined by [Ontology N
             <a href="#gender"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
             <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"male"</span>
+            <span class="literal">"male"^^<a href="#gender"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            </span>
          </dd>
          <dd>
             <a href="#status"
@@ -1142,7 +2291,9 @@ This section provides details for each class and property defined by [Ontology N
             <a href="#gender"
                title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
             <sup class="type-dp" title="data property">dp</sup> 
-            <span class="literal">"male"</span>
+            <span class="literal">"male"^^<a href="#gender"
+                  title="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">gender</a>
+            </span>
          </dd>
          <dd>
             <a href="#status"

@@ -6,7 +6,22 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#> .
 
-<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12> rdf:type owl:Ontology .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12> rdf:type owl:Ontology ;
+                                                                                   :eg:author "Àngel Mariages" ;
+                                                                                   rdfs:label "Sons of Anarchy Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#eg:author
+:eg:author rdf:type owl:AnnotationProperty ;
+           rdfs:subPropertyOf rdfs:label .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Datatypes
@@ -27,8 +42,51 @@
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn
 :appearsIn rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
+           owl:inverseOf :hasCast ;
            rdfs:domain :Character ;
            rdfs:range :Episode .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#availableAt
+:availableAt rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             owl:inverseOf :hasAvailable ;
+             rdfs:domain :TVSeries ;
+             rdfs:range :Platform .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy
+:directedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            owl:inverseOf :hasDirected ;
+            rdfs:domain :Episode ;
+            rdfs:range :Director .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#episodeFrom
+:episodeFrom rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             owl:inverseOf :hasEpisode ;
+             rdfs:domain :Episode ;
+             rdfs:range :Season .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasAvailable
+:hasAvailable rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast
+:hasCast rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Episode ;
+         rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasDirected
+:hasDirected rdf:type owl:ObjectProperty ;
+             rdfs:domain :Director ;
+             rdfs:range :Episode .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode
@@ -50,14 +108,22 @@
 :hasParent rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
            owl:inverseOf :isParent ;
-           rdfs:domain :Character ;
-           rdfs:range :Father ,
-                      :Mother .
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Daughter
+                                       :Son
+                                     )
+                       ] ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( :Father
+                                      :Mother
+                                    )
+                      ] .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason
 :hasSeason rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
+           owl:inverseOf :seasonFrom ;
            rdfs:domain :TVSeries ;
            rdfs:range :Season .
 
@@ -66,16 +132,31 @@
 :hasSibling rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
             owl:inverseOf :isSibling ;
-            rdfs:domain :Character ;
-            rdfs:range :Brother ,
-                       :Sister .
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Brother
+                                        :Sister
+                                      )
+                        ] ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( :Brother
+                                       :Sister
+                                     )
+                       ] .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited
+:hasWrited rdf:type owl:ObjectProperty ;
+           owl:inverseOf :writtenBy ;
+           rdfs:domain :Writer ;
+           rdfs:range :Episode .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried
 :isMarried rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :Character ;
-           rdfs:range :Character .
+           owl:inverseOf :isMarried ;
+           rdfs:domain :Partner ;
+           rdfs:range :Partner .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf
@@ -88,9 +169,16 @@
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent
 :isParent rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :Father ,
-                      :Mother ;
-          rdfs:range :Character .
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Father
+                                      :Mother
+                                    )
+                      ] ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Daughter
+                                     :Son
+                                   )
+                     ] .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy
@@ -104,9 +192,16 @@
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling
 :isSibling rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :Brother ,
-                       :Sister ;
-           rdfs:range :Character .
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Brother
+                                       :Sister
+                                     )
+                       ] ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( :Brother
+                                      :Sister
+                                    )
+                      ] .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays
@@ -116,21 +211,33 @@
           rdfs:range :Character .
 
 
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#seasonFrom
+:seasonFrom rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Season ;
+            rdfs:range :TVSeries .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy
+:writtenBy rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Episode ;
+           rdfs:range :Writer .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender
 :gender rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Character ;
         rdfs:range [ rdf:type rdfs:Datatype ;
                      owl:oneOf [ rdf:type rdf:List ;
-                                 rdf:first "female" ;
+                                 rdf:first "female"^^:gender ;
                                  rdf:rest [ rdf:type rdf:List ;
-                                            rdf:first "male" ;
-                                            rdf:rest [ rdf:type rdf:List ;
-                                                       rdf:first "nonbinary" ;
-                                                       rdf:rest rdf:nil
-                                                     ]
+                                            rdf:first "male"^^:gender ;
+                                            rdf:rest rdf:nil
                                           ]
                                ]
                    ] .
@@ -138,6 +245,7 @@
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status
 :status rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Character ;
         rdfs:range [ rdf:type rdfs:Datatype ;
                      owl:oneOf [ rdf:type rdf:List ;
                                  rdf:first "alive" ;
@@ -155,7 +263,8 @@
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor
 :Actor rdf:type owl:Class ;
-       rdfs:subClassOf :Person .
+       rdfs:subClassOf :Person ;
+       rdfs:comment "An actor of some character" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Award
@@ -164,7 +273,8 @@
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother
 :Brother rdf:type owl:Class ;
-         rdfs:subClassOf :Character .
+         rdfs:subClassOf :Character ;
+         rdfs:comment "A male sibling" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character
@@ -197,49 +307,86 @@
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :isPortrayedBy ;
                              owl:allValuesFrom :Actor
-                           ] .
+                           ] ;
+           rdfs:comment "A protrayed Character in a TVShow" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter
 :Daughter rdf:type owl:Class ;
-          rdfs:subClassOf :Character .
+          rdfs:subClassOf :Character ;
+          rdfs:comment "A female offspring" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director
 :Director rdf:type owl:Class ;
-          rdfs:subClassOf :Person .
+          rdfs:subClassOf :Person ;
+          rdfs:comment "A director of some TVSeries" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode
-:Episode rdf:type owl:Class .
+:Episode rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :episodeFrom ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Season
+                         ] .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction
 :Faction rdf:type owl:Class ;
-         rdfs:subClassOf :ShowElement .
+         rdfs:subClassOf :ShowElement ;
+         rdfs:comment "A TVShow gang" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father
 :Father rdf:type owl:Class ;
-        rdfs:subClassOf :Character .
+        rdfs:subClassOf :Character ;
+        rdfs:comment "A male parent" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother
 :Mother rdf:type owl:Class ;
-        rdfs:subClassOf :Character .
+        rdfs:subClassOf :Character ;
+        rdfs:comment "A female parent" .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnlinePlatform
+:OnlinePlatform rdf:type owl:Class ;
+                rdfs:subClassOf :Platform ;
+                rdfs:comment "A platform available through the Internet" .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner
+:Partner rdf:type owl:Class ;
+         rdfs:subClassOf :Character ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isMarried ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Partner
+                         ] ;
+         rdfs:comment "A person whom someone is married to" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person
-:Person rdf:type owl:Class .
+:Person rdf:type owl:Class ;
+        rdfs:comment "A real world person involved in the multimedia industry" .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#PhisicalPlatform
+:PhisicalPlatform rdf:type owl:Class ;
+                  rdfs:subClassOf :Platform ;
+                  rdfs:comment "A Platform available in the real world" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform
-:Platform rdf:type owl:Class .
+:Platform rdf:type owl:Class ;
+          rdfs:comment "A platform to obtain/rent a TVSeries" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Producer
 :Producer rdf:type owl:Class ;
-          rdfs:subClassOf :Person .
+          rdfs:subClassOf :Person ;
+          rdfs:comment "A producer of some TVSeries" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season
@@ -247,21 +394,25 @@
         rdfs:subClassOf [ rdf:type owl:Restriction ;
                           owl:onProperty :hasEpisode ;
                           owl:someValuesFrom :Episode
-                        ] .
+                        ] ;
+        rdfs:comment "A series of episodes grouped in a Season" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement
-:ShowElement rdf:type owl:Class .
+:ShowElement rdf:type owl:Class ;
+             rdfs:comment "An element part of a TVShow" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister
 :Sister rdf:type owl:Class ;
-        rdfs:subClassOf :Character .
+        rdfs:subClassOf :Character ;
+        rdfs:comment "A female sibling" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son
 :Son rdf:type owl:Class ;
-     rdfs:subClassOf :Character .
+     rdfs:subClassOf :Character ;
+     rdfs:comment "A male offspring" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries
@@ -269,12 +420,14 @@
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty :hasSeason ;
                             owl:someValuesFrom :Season
-                          ] .
+                          ] ;
+          rdfs:comment "An audiovisual program" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer
 :Writer rdf:type owl:Class ;
-        rdfs:subClassOf :Person .
+        rdfs:subClassOf :Person ;
+        rdfs:comment "A writer of the script of some TVSeries" .
 
 
 #################################################################
@@ -282,7 +435,20 @@
 #################################################################
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Abel_Teller
-:Abel_Teller rdf:type owl:NamedIndividual .
+:Abel_Teller rdf:type owl:NamedIndividual ;
+             :hasParent :Jax ;
+             :gender "male"^^:gender .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Allen_Coulter
+:Allen_Coulter rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Alvarez
+:Alvarez rdf:type owl:NamedIndividual ;
+         :isMemberOf :Mayans ;
+         :gender "male"^^:gender ;
+         :status "alive" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam
@@ -290,40 +456,407 @@
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow
-:Clay_Morrow rdf:type owl:NamedIndividual .
+:Clay_Morrow rdf:type owl:NamedIndividual ;
+             :isMarried :Gemma_Teller_Morrow ;
+             :gender "male"^^:gender ;
+             :status "dead" .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Fun_Town
+:Fun_Town rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow
-:Gemma_Teller_Morrow rdf:type owl:NamedIndividual .
+:Gemma_Teller_Morrow rdf:type owl:NamedIndividual ;
+                     :gender "female"^^:gender ;
+                     :status "dead" .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Giving_Back
+:Giving_Back rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax
-:Jax rdf:type owl:NamedIndividual ,
-              :Character ;
-     :hasParent :John_Teller ;
+:Jax rdf:type owl:NamedIndividual ;
+     :appearsIn :Pilot ;
+     :hasParent :Gemma_Teller_Morrow ,
+                :John_Teller ;
      :isPortrayedBy :Charlie_Hunnam ;
-     :gender "male" ;
-     :status "dead" .
+     :gender "male"^^:gender ;
+     :status "dead" ;
+     rdfs:sameAs "https://dbpedia.org/page/Charlie_Hunnam" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller
 :John_Teller rdf:type owl:NamedIndividual ;
-             :gender "male" ;
+             :gender "male"^^:gender ;
              :status "dead" .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter
+:Kurt_Sutter rdf:type owl:NamedIndividual ;
+             :hasWrited :Pilot ;
+             rdfs:sameAs "https://dbpedia.org/page/Kurt_Sutter" .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mayans
+:Mayans rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Netflix
+:Netflix rdf:type owl:NamedIndividual ,
+                  :OnlinePlatform ;
+         :hasAvailable :SonsOfAnarchy .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Otto_Delaney
+:Otto_Delaney rdf:type owl:NamedIndividual ;
+              :isPortrayedBy :Kurt_Sutter ;
+              :gender "male"^^:gender ;
+              :status "dead" .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Patch_Over
+:Patch_Over rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot
+:Pilot rdf:type owl:NamedIndividual ;
+       :directedBy :Allen_Coulter ;
+       :hasCast :Gemma_Teller_Morrow .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Ron_Perlman
+:Ron_Perlman rdf:type owl:NamedIndividual ;
+             :portrays :Clay_Morrow ;
+             rdfs:sameAs "https://dbpedia.org/page/Ron_Perlman" .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SAMCRO
+:SAMCRO rdf:type owl:NamedIndividual ;
+        :hasMember :Gemma_Teller_Morrow ,
+                   :Jax ,
+                   :Tara_Knowles .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season_1
+:Season_1 rdf:type owl:NamedIndividual ;
+          :hasEpisode :Fun_Town ,
+                      :Giving_Back ,
+                      :Patch_Over ,
+                      :Pilot ,
+                      :Seeds .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Seeds
+:Seeds rdf:type owl:NamedIndividual ;
+       :hasCast :Gemma_Teller_Morrow ,
+                :Jax ,
+                :Tara_Knowles ;
+       :writtenBy :Kurt_Sutter .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SonsOfAnarchy
+:SonsOfAnarchy rdf:type owl:NamedIndividual ;
+               :hasSeason :Season_1 .
+
+
+###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles
+:Tara_Knowles rdf:type owl:NamedIndividual ;
+              :isMarried :Jax ;
+              :gender "female"^^:gender ;
+              :status "dead" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller
 :Thomas_Teller rdf:type owl:NamedIndividual ;
                :hasSibling :Jax ;
-               :gender "male" ;
+               :gender "male"^^:gender ;
                :status "dead" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller_II
 :Thomas_Teller_II rdf:type owl:NamedIndividual ;
                   :hasParent :Jax ;
-                  :gender "male" ;
+                  :gender "male"^^:gender ;
                   :status "alive" .
 
+
+#################################################################
+#    Annotations
+#################################################################
+
+:gender rdfs:comment "A type to define the gender of a character" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#g> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSibling ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#stringEqualIgnoreCase> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#g> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first "male"^^:gender ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Brother ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasParent ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#stringEqualIgnoreCase> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#g> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first "female"^^:gender ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Daughter ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasParent ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#stringEqualIgnoreCase> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#g> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first "male"^^:gender ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Son ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasParent ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#stringEqualIgnoreCase> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#g> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first "female"^^:gender ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Mother ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasParent ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#stringEqualIgnoreCase> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#g> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first "male"^^:gender ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Father ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSibling ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#stringEqualIgnoreCase> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#g> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first "female"^^:gender ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Sister ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
