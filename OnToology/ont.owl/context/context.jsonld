@@ -3,6 +3,10 @@
     "Mother" : {
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother"
     },
+    "hasCast" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast",
+      "@type" : "@id"
+    },
     "Daughter" : {
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter"
     },
@@ -13,6 +17,9 @@
     "Platform" : {
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform"
     },
+    "Partner" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner"
+    },
     "Sister" : {
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister"
     },
@@ -20,8 +27,25 @@
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent",
       "@type" : "@id"
     },
+    "availableAt" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#availableAt",
+      "@type" : "@id"
+    },
     "Director" : {
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director"
+    },
+    "writtenBy" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy",
+      "@type" : "@id"
+    },
+    "PhisicalPlatform" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#PhisicalPlatform"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "author" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#eg:author"
     },
     "isPortrayedBy" : {
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy",
@@ -87,6 +111,10 @@
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
       "@type" : "@id"
     },
+    "hasAvailable" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasAvailable",
+      "@type" : "@id"
+    },
     "hasMember" : {
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember",
       "@type" : "@id"
@@ -95,17 +123,46 @@
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn",
       "@type" : "@id"
     },
+    "seasonFrom" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#seasonFrom",
+      "@type" : "@id"
+    },
     "status" : {
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status"
     },
+    "directedBy" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy",
+      "@type" : "@id"
+    },
+    "hasDirected" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasDirected",
+      "@type" : "@id"
+    },
     "Brother" : {
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother"
+    },
+    "OnlinePlatform" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnlinePlatform"
+    },
+    "hasWrited" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "Father" : {
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father"
     },
     "isSibling" : {
       "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling",
+      "@type" : "@id"
+    },
+    "episodeFrom" : {
+      "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#episodeFrom",
       "@type" : "@id"
     },
     "Season" : {

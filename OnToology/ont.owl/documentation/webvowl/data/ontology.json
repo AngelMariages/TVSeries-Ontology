@@ -1,87 +1,120 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
+    "languages" : [ "undefined" ],
     "baseIris" : [ "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12", "http://www.w3.org/2001/XMLSchema" ],
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12"
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "labels" : {
+      "undefined" : "Sons of Anarchy Ontology"
+    },
+    "other" : {
+      "author" : [ {
+        "identifier" : "author",
+        "language" : "undefined",
+        "value" : "Àngel Mariages",
+        "type" : "label"
+      } ]
+    }
   },
   "namespace" : [ ],
   "class" : [ {
     "id" : "0",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
     "id" : "9",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "31",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
-    "id" : "48",
+    "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "40",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "50",
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "59",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "56",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "55",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
     "type" : "owl:Class"
   }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "17",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "19",
-    "type" : "rdfs:Literal"
-  }, {
     "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "70",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "71",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "47",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "56",
+    "id" : "52",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "13",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -93,14 +126,29 @@
     },
     "id" : "0"
   }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Partner"
+    },
+    "comment" : {
+      "undefined" : "A person whom someone is married to"
+    },
+    "id" : "9",
+    "superClasses" : [ "7" ]
+  }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
     "instances" : 0,
     "label" : {
       "IRI-based" : "ShowElement"
     },
-    "subClasses" : [ "8", "6" ],
-    "id" : "7"
+    "subClasses" : [ "13", "7" ],
+    "comment" : {
+      "undefined" : "An element part of a TVShow"
+    },
+    "id" : "12"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -108,8 +156,11 @@
     "label" : {
       "IRI-based" : "Person"
     },
-    "subClasses" : [ "10", "11", "12", "13" ],
-    "id" : "9"
+    "subClasses" : [ "15", "16", "17", "18" ],
+    "comment" : {
+      "undefined" : "A real world person involved in the multimedia industry"
+    },
+    "id" : "14"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Producer",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -117,8 +168,11 @@
     "label" : {
       "IRI-based" : "Producer"
     },
-    "id" : "11",
-    "superClasses" : [ "9" ]
+    "comment" : {
+      "undefined" : "A producer of some TVSeries"
+    },
+    "id" : "16",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -126,8 +180,11 @@
     "label" : {
       "IRI-based" : "Mother"
     },
-    "id" : "14",
-    "superClasses" : [ "6" ]
+    "comment" : {
+      "undefined" : "A female parent"
+    },
+    "id" : "19",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -135,8 +192,11 @@
     "label" : {
       "IRI-based" : "Sister"
     },
-    "id" : "20",
-    "superClasses" : [ "6" ]
+    "comment" : {
+      "undefined" : "A female sibling"
+    },
+    "id" : "11",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -144,8 +204,11 @@
     "label" : {
       "IRI-based" : "Writer"
     },
-    "id" : "13",
-    "superClasses" : [ "9" ]
+    "comment" : {
+      "undefined" : "A writer of the script of some TVSeries"
+    },
+    "id" : "18",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -153,16 +216,10 @@
     "label" : {
       "IRI-based" : "Season"
     },
-    "id" : "3"
-  }, {
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter",
-    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Daughter"
+    "comment" : {
+      "undefined" : "A series of episodes grouped in a Season"
     },
-    "id" : "31",
-    "superClasses" : [ "6" ]
+    "id" : "3"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -170,8 +227,37 @@
     "label" : {
       "IRI-based" : "Director"
     },
-    "id" : "12",
-    "superClasses" : [ "9" ]
+    "comment" : {
+      "undefined" : "A director of some TVSeries"
+    },
+    "id" : "17",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Daughter"
+    },
+    "comment" : {
+      "undefined" : "A female offspring"
+    },
+    "id" : "25",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -179,18 +265,33 @@
     "label" : {
       "IRI-based" : "Brother"
     },
-    "id" : "36",
-    "superClasses" : [ "6" ]
+    "comment" : {
+      "undefined" : "A male sibling"
+    },
+    "id" : "23",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "26",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "instances" : 0,
-    "union" : [ "43", "14" ],
+    "union" : [ "44", "25" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "48"
+    "id" : "59"
   }, {
     "instances" : 0,
-    "union" : [ "43", "14" ],
+    "union" : [ "23", "11" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "40"
+    "id" : "56"
+  }, {
+    "instances" : 0,
+    "union" : [ "23", "11" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "55"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -198,8 +299,11 @@
     "label" : {
       "IRI-based" : "Son"
     },
-    "id" : "39",
-    "superClasses" : [ "6" ]
+    "comment" : {
+      "undefined" : "A male offspring"
+    },
+    "id" : "44",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Award",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -207,7 +311,7 @@
     "label" : {
       "IRI-based" : "Award"
     },
-    "id" : "50"
+    "id" : "64"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -215,38 +319,47 @@
     "label" : {
       "IRI-based" : "TVSeries"
     },
+    "comment" : {
+      "undefined" : "An audiovisual program"
+    },
     "id" : "2"
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "16",
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#PhisicalPlatform",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "instances" : 0,
     "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "17",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "19",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
+      "IRI-based" : "PhisicalPlatform"
+    },
+    "comment" : {
+      "undefined" : "A Platform available in the real world"
+    },
+    "id" : "51",
+    "superClasses" : [ "52" ]
   }, {
     "instances" : 0,
-    "union" : [ "36", "20" ],
+    "union" : [ "44", "25" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "51"
+    "id" : "70"
   }, {
     "instances" : 0,
-    "union" : [ "36", "20" ],
+    "union" : [ "47", "19" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "37"
+    "id" : "71"
+  }, {
+    "instances" : 0,
+    "union" : [ "23", "11" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "65"
+  }, {
+    "instances" : 0,
+    "union" : [ "23", "11" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "66"
+  }, {
+    "instances" : 0,
+    "union" : [ "47", "19" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "58"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -254,8 +367,30 @@
     "label" : {
       "IRI-based" : "Father"
     },
-    "id" : "43",
-    "superClasses" : [ "6" ]
+    "comment" : {
+      "undefined" : "A male parent"
+    },
+    "id" : "47",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnlinePlatform",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OnlinePlatform"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Netflix",
+      "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+      "labels" : {
+        "IRI-based" : "Netflix"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A platform available through the Internet"
+    },
+    "id" : "54",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -263,7 +398,11 @@
     "label" : {
       "IRI-based" : "Platform"
     },
-    "id" : "56"
+    "subClasses" : [ "54", "51" ],
+    "comment" : {
+      "undefined" : "A platform to obtain/rent a TVSeries"
+    },
+    "id" : "52"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -271,16 +410,12 @@
     "label" : {
       "IRI-based" : "Character"
     },
-    "individuals" : [ {
-      "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax",
-      "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-      "labels" : {
-        "IRI-based" : "Jax"
-      }
-    } ],
-    "subClasses" : [ "39", "43", "14", "31", "36", "20" ],
-    "id" : "6",
-    "superClasses" : [ "7" ]
+    "subClasses" : [ "44", "9", "47", "19", "25", "23", "11" ],
+    "comment" : {
+      "undefined" : "A protrayed Character in a TVShow"
+    },
+    "id" : "7",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -288,8 +423,11 @@
     "label" : {
       "IRI-based" : "Actor"
     },
-    "id" : "10",
-    "superClasses" : [ "9" ]
+    "comment" : {
+      "undefined" : "An actor of some character"
+    },
+    "id" : "15",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -297,56 +435,38 @@
     "label" : {
       "IRI-based" : "Faction"
     },
-    "id" : "8",
-    "superClasses" : [ "7" ]
+    "comment" : {
+      "undefined" : "A TVShow gang"
+    },
+    "id" : "13",
+    "superClasses" : [ "12" ]
   } ],
   "property" : [ {
     "id" : "1",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "5",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "15",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "18",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "4",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "32",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "33",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "34",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "35",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "26",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "28",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "38",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "25",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "41",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "42",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "44",
+    "id" : "43",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "45",
@@ -355,229 +475,335 @@
     "id" : "46",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "47",
+    "id" : "48",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "49",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "23",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "52",
-    "type" : "owl:allValuesFrom"
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "53",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "54",
-    "type" : "owl:someValuesFrom"
+    "id" : "29",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "55",
-    "type" : "owl:allValuesFrom"
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "57",
-    "type" : "owl:someValuesFrom"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "24",
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
     "type" : "owl:objectProperty"
   }, {
     "id" : "27",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "68",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "69",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "72",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "73",
+    "type" : "owl:allValuesFrom"
+  }, {
     "id" : "30",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "21",
+    "id" : "32",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "29",
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason",
+    "inverse" : "4",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
     "range" : "3",
     "label" : {
       "IRI-based" : "hasSeason"
     },
-    "superproperty" : [ "4" ],
+    "superproperty" : [ "5" ],
     "domain" : "2",
     "attributes" : [ "object" ],
     "id" : "1"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn",
+    "inverse" : "8",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
     "range" : "0",
     "label" : {
       "IRI-based" : "appearsIn"
     },
-    "superproperty" : [ "4" ],
-    "domain" : "6",
+    "superproperty" : [ "5" ],
+    "domain" : "7",
     "attributes" : [ "object" ],
-    "id" : "5"
+    "id" : "6"
   }, {
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender",
-    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "gender"
-    },
-    "domain" : "16",
-    "attributes" : [ "datatype" ],
-    "id" : "15"
+    "range" : "7",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "19",
+    "range" : "21",
     "label" : {
       "IRI-based" : "status"
     },
-    "domain" : "16",
+    "domain" : "7",
     "attributes" : [ "datatype" ],
-    "id" : "18"
+    "id" : "20"
+  }, {
+    "range" : "7",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "7",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "16",
+    "range" : "26",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "16",
-    "subproperty" : [ "21", "5", "1", "22", "23", "24", "25", "26", "27", "28", "29", "30" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "4"
+    "domain" : "26",
+    "subproperty" : [ "6", "1", "27", "28", "29", "30", "8", "31", "32", "33", "34", "35", "4", "36", "37", "38", "39", "40", "41" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "5"
   }, {
-    "range" : "6",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "32"
-  }, {
-    "range" : "6",
-    "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "33"
-  }, {
-    "range" : "6",
-    "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "34"
-  }, {
-    "range" : "6",
-    "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "35"
-  }, {
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling",
-    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "isSibling"
-    },
-    "superproperty" : [ "4" ],
-    "domain" : "37",
-    "attributes" : [ "object" ],
-    "id" : "26"
-  }, {
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf",
-    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "isMemberOf"
-    },
-    "superproperty" : [ "4" ],
-    "domain" : "6",
-    "attributes" : [ "object" ],
-    "id" : "28"
-  }, {
-    "range" : "6",
-    "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "38"
-  }, {
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent",
-    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "isParent"
-    },
-    "superproperty" : [ "4" ],
-    "domain" : "40",
-    "attributes" : [ "object" ],
-    "id" : "25"
-  }, {
-    "range" : "9",
-    "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "41"
-  }, {
-    "range" : "6",
-    "domain" : "43",
+    "range" : "7",
+    "domain" : "9",
     "attributes" : [ "object", "anonymous" ],
     "id" : "42"
   }, {
-    "range" : "9",
-    "domain" : "10",
+    "range" : "7",
+    "domain" : "44",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "44"
+    "id" : "43"
   }, {
     "range" : "7",
-    "domain" : "6",
+    "domain" : "19",
     "attributes" : [ "object", "anonymous" ],
     "id" : "45"
   }, {
-    "range" : "9",
-    "domain" : "12",
+    "range" : "7",
+    "domain" : "47",
     "attributes" : [ "object", "anonymous" ],
     "id" : "46"
   }, {
-    "range" : "9",
-    "domain" : "11",
+    "range" : "14",
+    "domain" : "18",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "47"
+    "id" : "48"
   }, {
-    "range" : "7",
-    "domain" : "8",
+    "range" : "14",
+    "domain" : "17",
     "attributes" : [ "object", "anonymous" ],
     "id" : "49"
   }, {
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried",
+    "range" : "52",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "52",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#availableAt",
+    "inverse" : "41",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "6",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "availableAt"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "isSibling"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "55",
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isMemberOf"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "range" : "14",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "isParent"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "58",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "range" : "12",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "14",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "12",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "writtenBy"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasAvailable",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasAvailable"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried",
+    "inverse" : "27",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "9",
     "label" : {
       "IRI-based" : "isMarried"
     },
-    "superproperty" : [ "4" ],
-    "domain" : "6",
+    "superproperty" : [ "5" ],
+    "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "22"
+    "id" : "27"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling",
-    "inverse" : "26",
+    "inverse" : "31",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "51",
+    "range" : "66",
     "label" : {
       "IRI-based" : "hasSibling"
     },
-    "superproperty" : [ "4" ],
-    "domain" : "6",
+    "superproperty" : [ "5" ],
+    "domain" : "65",
     "attributes" : [ "object" ],
-    "id" : "23"
+    "id" : "28"
   }, {
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy",
-    "inverse" : "30",
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "10",
+    "range" : "7",
     "label" : {
-      "IRI-based" : "isPortrayedBy"
+      "IRI-based" : "hasCast"
     },
-    "superproperty" : [ "4" ],
-    "domain" : "6",
-    "attributes" : [ "object", "allValues" ],
-    "id" : "52"
+    "superproperty" : [ "5" ],
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isMemberOf"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "7",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "67"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -585,90 +811,149 @@
     "label" : {
       "IRI-based" : "hasEpisode"
     },
-    "superproperty" : [ "4" ],
+    "superproperty" : [ "5" ],
     "domain" : "3",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "53"
+    "attributes" : [ "someValues", "object" ],
+    "id" : "68"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason",
+    "inverse" : "4",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
     "range" : "3",
     "label" : {
       "IRI-based" : "hasSeason"
     },
-    "superproperty" : [ "4" ],
+    "superproperty" : [ "5" ],
     "domain" : "2",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "54"
-  }, {
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf",
-    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "isMemberOf"
-    },
-    "superproperty" : [ "4" ],
-    "domain" : "6",
-    "attributes" : [ "object", "allValues" ],
-    "id" : "55"
+    "attributes" : [ "someValues", "object" ],
+    "id" : "69"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn",
+    "inverse" : "8",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
     "range" : "2",
     "label" : {
       "IRI-based" : "appearsIn"
     },
-    "superproperty" : [ "4" ],
-    "domain" : "6",
-    "attributes" : [ "object", "someValues" ],
-    "id" : "57"
+    "superproperty" : [ "5" ],
+    "domain" : "7",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "72"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy",
-    "inverse" : "30",
+    "inverse" : "35",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "9",
+    "range" : "15",
     "label" : {
       "IRI-based" : "isPortrayedBy"
     },
-    "superproperty" : [ "4" ],
-    "domain" : "6",
-    "attributes" : [ "object" ],
-    "id" : "24"
+    "superproperty" : [ "5" ],
+    "domain" : "7",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "73"
   }, {
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent",
-    "inverse" : "25",
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy",
+    "inverse" : "35",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "48",
+    "range" : "14",
     "label" : {
-      "IRI-based" : "hasParent"
+      "IRI-based" : "isPortrayedBy"
     },
-    "superproperty" : [ "4" ],
-    "domain" : "6",
-    "attributes" : [ "object" ],
-    "id" : "27"
-  }, {
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays",
-    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "portrays"
-    },
-    "superproperty" : [ "4" ],
-    "domain" : "10",
+    "superproperty" : [ "5" ],
+    "domain" : "7",
     "attributes" : [ "object" ],
     "id" : "30"
   }, {
-    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember",
-    "inverse" : "28",
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent",
+    "inverse" : "38",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-    "range" : "6",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "hasParent"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "70",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasDirected",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasDirected"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "portrays"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#episodeFrom",
+    "inverse" : "39",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "episodeFrom"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#seasonFrom",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "seasonFrom"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember",
+    "inverse" : "33",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "7",
     "label" : {
       "IRI-based" : "hasMember"
     },
-    "superproperty" : [ "4" ],
-    "domain" : "8",
+    "superproperty" : [ "5" ],
+    "domain" : "13",
     "attributes" : [ "object" ],
-    "id" : "21"
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy",
+    "inverse" : "74",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "directedBy"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited",
+    "inverse" : "40",
+    "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasWrited"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "75"
   }, {
     "iri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode",
     "baseIri" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
@@ -676,9 +961,9 @@
     "label" : {
       "IRI-based" : "hasEpisode"
     },
-    "superproperty" : [ "4" ],
+    "superproperty" : [ "5" ],
     "domain" : "3",
     "attributes" : [ "object" ],
-    "id" : "29"
+    "id" : "39"
   } ]
 }
