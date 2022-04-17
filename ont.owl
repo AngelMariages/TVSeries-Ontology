@@ -10,7 +10,7 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:untitled-ontology-12="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#">
-    <owl:Ontology rdf:about="https://w3id.org/angelmariages-ontology">
+    <owl:Ontology rdf:about="https://w3id.org/def/angelmariages-ontology">
         <eg:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Àngel Mariages</eg:author>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sons of Anarchy Ontology</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sons of Anarchy Ontology</rdfs:label>
@@ -718,7 +718,9 @@
 
     <!-- http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam">
+        <rdfs:sameAs>https://dbpedia.org/page/Charlie_Hunnam</rdfs:sameAs>
+    </owl:NamedIndividual>
     
 
 
@@ -762,7 +764,6 @@
         <isPortrayedBy rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam"/>
         <gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</gender>
         <status>dead</status>
-        <rdfs:sameAs>https://dbpedia.org/page/Charlie_Hunnam</rdfs:sameAs>
     </owl:NamedIndividual>
     
 
