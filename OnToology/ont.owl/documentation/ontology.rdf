@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#"
-     xml:base="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12"
+<rdf:RDF xmlns="https://w3id.org/angelmariages-ontology#"
+     xml:base="https://w3id.org/angelmariages-ontology"
      xmlns:eg="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#eg:"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,8 +10,9 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:untitled-ontology-12="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12">
+    <owl:Ontology rdf:about="https://w3id.org/angelmariages-ontology">
         <eg:author>Àngel Mariages</eg:author>
+        <rdfs:comment>Sons of Anarchy Ontology</rdfs:comment>
         <rdfs:label>Sons of Anarchy Ontology</rdfs:label>
     </owl:Ontology>
     
@@ -749,8 +750,8 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Abel_Teller">
-        <hasParent rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
-        <gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</gender>
+        <untitled-ontology-12:hasParent rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
+        <untitled-ontology-12:gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</untitled-ontology-12:gender>
     </owl:NamedIndividual>
     
 
@@ -766,9 +767,9 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Alvarez">
-        <isMemberOf rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mayans"/>
-        <gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</gender>
-        <status>alive</status>
+        <untitled-ontology-12:isMemberOf rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mayans"/>
+        <untitled-ontology-12:gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</untitled-ontology-12:gender>
+        <untitled-ontology-12:status>alive</untitled-ontology-12:status>
     </owl:NamedIndividual>
     
 
@@ -784,9 +785,9 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow">
-        <isMarried rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow"/>
-        <gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</gender>
-        <status>dead</status>
+        <untitled-ontology-12:isMarried rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow"/>
+        <untitled-ontology-12:gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</untitled-ontology-12:gender>
+        <untitled-ontology-12:status>dead</untitled-ontology-12:status>
     </owl:NamedIndividual>
     
 
@@ -802,8 +803,8 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow">
-        <gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">female</gender>
-        <status>dead</status>
+        <untitled-ontology-12:gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">female</untitled-ontology-12:gender>
+        <untitled-ontology-12:status>dead</untitled-ontology-12:status>
     </owl:NamedIndividual>
     
 
@@ -819,12 +820,12 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax">
-        <appearsIn rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot"/>
-        <hasParent rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow"/>
-        <hasParent rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller"/>
-        <isPortrayedBy rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam"/>
-        <gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</gender>
-        <status>dead</status>
+        <untitled-ontology-12:appearsIn rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot"/>
+        <untitled-ontology-12:hasParent rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow"/>
+        <untitled-ontology-12:hasParent rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller"/>
+        <untitled-ontology-12:isPortrayedBy rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam"/>
+        <untitled-ontology-12:gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</untitled-ontology-12:gender>
+        <untitled-ontology-12:status>dead</untitled-ontology-12:status>
         <rdfs:sameAs>https://dbpedia.org/page/Charlie_Hunnam</rdfs:sameAs>
     </owl:NamedIndividual>
     
@@ -834,8 +835,8 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller">
-        <gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</gender>
-        <status>dead</status>
+        <untitled-ontology-12:gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</untitled-ontology-12:gender>
+        <untitled-ontology-12:status>dead</untitled-ontology-12:status>
     </owl:NamedIndividual>
     
 
@@ -844,7 +845,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter">
-        <hasWrited rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot"/>
+        <untitled-ontology-12:hasWrited rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot"/>
         <rdfs:sameAs>https://dbpedia.org/page/Kurt_Sutter</rdfs:sameAs>
     </owl:NamedIndividual>
     
@@ -862,7 +863,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Netflix">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnlinePlatform"/>
-        <hasAvailable rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SonsOfAnarchy"/>
+        <untitled-ontology-12:hasAvailable rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SonsOfAnarchy"/>
     </owl:NamedIndividual>
     
 
@@ -871,9 +872,9 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Otto_Delaney">
-        <isPortrayedBy rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter"/>
-        <gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</gender>
-        <status>dead</status>
+        <untitled-ontology-12:isPortrayedBy rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter"/>
+        <untitled-ontology-12:gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</untitled-ontology-12:gender>
+        <untitled-ontology-12:status>dead</untitled-ontology-12:status>
     </owl:NamedIndividual>
     
 
@@ -889,8 +890,8 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot">
-        <directedBy rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Allen_Coulter"/>
-        <hasCast rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow"/>
+        <untitled-ontology-12:directedBy rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Allen_Coulter"/>
+        <untitled-ontology-12:hasCast rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow"/>
     </owl:NamedIndividual>
     
 
@@ -899,7 +900,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Ron_Perlman">
-        <portrays rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow"/>
+        <untitled-ontology-12:portrays rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow"/>
         <rdfs:sameAs>https://dbpedia.org/page/Ron_Perlman</rdfs:sameAs>
     </owl:NamedIndividual>
     
@@ -909,9 +910,9 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SAMCRO">
-        <hasMember rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow"/>
-        <hasMember rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
-        <hasMember rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles"/>
+        <untitled-ontology-12:hasMember rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow"/>
+        <untitled-ontology-12:hasMember rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
+        <untitled-ontology-12:hasMember rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles"/>
     </owl:NamedIndividual>
     
 
@@ -920,11 +921,11 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season_1">
-        <hasEpisode rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Fun_Town"/>
-        <hasEpisode rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Giving_Back"/>
-        <hasEpisode rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Patch_Over"/>
-        <hasEpisode rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot"/>
-        <hasEpisode rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Seeds"/>
+        <untitled-ontology-12:hasEpisode rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Fun_Town"/>
+        <untitled-ontology-12:hasEpisode rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Giving_Back"/>
+        <untitled-ontology-12:hasEpisode rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Patch_Over"/>
+        <untitled-ontology-12:hasEpisode rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot"/>
+        <untitled-ontology-12:hasEpisode rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Seeds"/>
     </owl:NamedIndividual>
     
 
@@ -933,10 +934,10 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Seeds">
-        <hasCast rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow"/>
-        <hasCast rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
-        <hasCast rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles"/>
-        <writtenBy rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter"/>
+        <untitled-ontology-12:hasCast rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow"/>
+        <untitled-ontology-12:hasCast rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
+        <untitled-ontology-12:hasCast rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles"/>
+        <untitled-ontology-12:writtenBy rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter"/>
     </owl:NamedIndividual>
     
 
@@ -945,7 +946,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SonsOfAnarchy">
-        <hasSeason rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season_1"/>
+        <untitled-ontology-12:hasSeason rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season_1"/>
     </owl:NamedIndividual>
     
 
@@ -954,9 +955,9 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles">
-        <isMarried rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
-        <gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">female</gender>
-        <status>dead</status>
+        <untitled-ontology-12:isMarried rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
+        <untitled-ontology-12:gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">female</untitled-ontology-12:gender>
+        <untitled-ontology-12:status>dead</untitled-ontology-12:status>
     </owl:NamedIndividual>
     
 
@@ -965,9 +966,9 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller">
-        <hasSibling rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
-        <gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</gender>
-        <status>dead</status>
+        <untitled-ontology-12:hasSibling rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
+        <untitled-ontology-12:gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</untitled-ontology-12:gender>
+        <untitled-ontology-12:status>dead</untitled-ontology-12:status>
     </owl:NamedIndividual>
     
 
@@ -976,9 +977,9 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller_II">
-        <hasParent rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
-        <gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</gender>
-        <status>alive</status>
+        <untitled-ontology-12:hasParent rdf:resource="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax"/>
+        <untitled-ontology-12:gender rdf:datatype="http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender">male</untitled-ontology-12:gender>
+        <untitled-ontology-12:status>alive</untitled-ontology-12:status>
     </owl:NamedIndividual>
     
 
