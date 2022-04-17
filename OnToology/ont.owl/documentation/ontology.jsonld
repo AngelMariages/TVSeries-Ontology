@@ -660,15 +660,6 @@
     } ]
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#eg:author" : [ {
-    "@value" : "Àngel Mariages"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Sons of Anarchy Ontology"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Abel_Teller",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender" : [ {
@@ -1395,6 +1386,18 @@
 }, {
   "@id" : "http://www.w3.org/2003/11/swrlb#stringEqualIgnoreCase",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "https://w3id.org/angelmariages-ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#eg:author" : [ {
+    "@value" : "Àngel Mariages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sons of Anarchy Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sons of Anarchy Ontology"
+  } ]
 }, {
   "@id" : "urn:swrl:var#c",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]

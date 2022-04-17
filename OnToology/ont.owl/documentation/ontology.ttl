@@ -1,22 +1,23 @@
-@prefix : <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#> .
+@prefix : <https://w3id.org/angelmariages-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#> .
+@base <https://w3id.org/angelmariages-ontology#> .
 
-<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12> rdf:type owl:Ontology ;
-                                                                                   :eg:author "Àngel Mariages" ;
-                                                                                   rdfs:label "Sons of Anarchy Ontology" .
+<https://w3id.org/angelmariages-ontology> rdf:type owl:Ontology ;
+                                           <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#eg:author> "Àngel Mariages" ;
+                                           rdfs:comment "Sons of Anarchy Ontology" ;
+                                           rdfs:label "Sons of Anarchy Ontology" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#eg:author
-:eg:author rdf:type owl:AnnotationProperty ;
-           rdfs:subPropertyOf rdfs:label .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#eg:author> rdf:type owl:AnnotationProperty ;
+                                                                                            rdfs:subPropertyOf rdfs:label .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#sameAs
@@ -28,11 +29,11 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender
-:gender rdf:type rdfs:Datatype .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> rdf:type rdfs:Datatype .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status
-:status rdf:type rdfs:Datatype .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> rdf:type rdfs:Datatype .
 
 
 #################################################################
@@ -40,189 +41,189 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn
-:appearsIn rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
-           owl:inverseOf :hasCast ;
-           rdfs:domain :Character ;
-           rdfs:range :Episode .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                            owl:inverseOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast> ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
+                                                                                            rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#availableAt
-:availableAt rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             owl:inverseOf :hasAvailable ;
-             rdfs:domain :TVSeries ;
-             rdfs:range :Platform .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#availableAt> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                              owl:inverseOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasAvailable> ;
+                                                                                              rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> ;
+                                                                                              rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy
-:directedBy rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            owl:inverseOf :hasDirected ;
-            rdfs:domain :Episode ;
-            rdfs:range :Director .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                             owl:inverseOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasDirected> ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> ;
+                                                                                             rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#episodeFrom
-:episodeFrom rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             owl:inverseOf :hasEpisode ;
-             rdfs:domain :Episode ;
-             rdfs:range :Season .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#episodeFrom> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                              owl:inverseOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode> ;
+                                                                                              rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> ;
+                                                                                              rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasAvailable
-:hasAvailable rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasAvailable> rdf:type owl:ObjectProperty ;
+                                                                                               rdfs:subPropertyOf owl:topObjectProperty .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast
-:hasCast rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf owl:topObjectProperty ;
-         rdfs:domain :Episode ;
-         rdfs:range :Character .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast> rdf:type owl:ObjectProperty ;
+                                                                                          rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                          rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> ;
+                                                                                          rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasDirected
-:hasDirected rdf:type owl:ObjectProperty ;
-             rdfs:domain :Director ;
-             rdfs:range :Episode .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasDirected> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director> ;
+                                                                                              rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode
-:hasEpisode rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain :Season ;
-            rdfs:range :Episode .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season> ;
+                                                                                             rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember
-:hasMember rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
-           owl:inverseOf :isMemberOf ;
-           rdfs:domain :Faction ;
-           rdfs:range :Character .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                            owl:inverseOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf> ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction> ;
+                                                                                            rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent
-:hasParent rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
-           owl:inverseOf :isParent ;
-           rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( :Daughter
-                                       :Son
-                                     )
-                       ] ;
-           rdfs:range [ rdf:type owl:Class ;
-                        owl:unionOf ( :Father
-                                      :Mother
-                                    )
-                      ] .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                            owl:inverseOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent> ;
+                                                                                            rdfs:domain [ rdf:type owl:Class ;
+                                                                                                          owl:unionOf ( <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter>
+                                                                                                                        <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son>
+                                                                                                                      )
+                                                                                                        ] ;
+                                                                                            rdfs:range [ rdf:type owl:Class ;
+                                                                                                         owl:unionOf ( <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father>
+                                                                                                                       <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother>
+                                                                                                                     )
+                                                                                                       ] .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason
-:hasSeason rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
-           owl:inverseOf :seasonFrom ;
-           rdfs:domain :TVSeries ;
-           rdfs:range :Season .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                            owl:inverseOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#seasonFrom> ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> ;
+                                                                                            rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling
-:hasSibling rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            owl:inverseOf :isSibling ;
-            rdfs:domain [ rdf:type owl:Class ;
-                          owl:unionOf ( :Brother
-                                        :Sister
-                                      )
-                        ] ;
-            rdfs:range [ rdf:type owl:Class ;
-                         owl:unionOf ( :Brother
-                                       :Sister
-                                     )
-                       ] .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                             owl:inverseOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling> ;
+                                                                                             rdfs:domain [ rdf:type owl:Class ;
+                                                                                                           owl:unionOf ( <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother>
+                                                                                                                         <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister>
+                                                                                                                       )
+                                                                                                         ] ;
+                                                                                             rdfs:range [ rdf:type owl:Class ;
+                                                                                                          owl:unionOf ( <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother>
+                                                                                                                        <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister>
+                                                                                                                      )
+                                                                                                        ] .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited
-:hasWrited rdf:type owl:ObjectProperty ;
-           owl:inverseOf :writtenBy ;
-           rdfs:domain :Writer ;
-           rdfs:range :Episode .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited> rdf:type owl:ObjectProperty ;
+                                                                                            owl:inverseOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy> ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer> ;
+                                                                                            rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried
-:isMarried rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
-           owl:inverseOf :isMarried ;
-           rdfs:domain :Partner ;
-           rdfs:range :Partner .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                            owl:inverseOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried> ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner> ;
+                                                                                            rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf
-:isMemberOf rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain :Character ;
-            rdfs:range :Faction .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
+                                                                                             rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent
-:isParent rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :Father
-                                      :Mother
-                                    )
-                      ] ;
-          rdfs:range [ rdf:type owl:Class ;
-                       owl:unionOf ( :Daughter
-                                     :Son
-                                   )
-                     ] .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isParent> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                           rdfs:domain [ rdf:type owl:Class ;
+                                                                                                         owl:unionOf ( <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father>
+                                                                                                                       <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother>
+                                                                                                                     )
+                                                                                                       ] ;
+                                                                                           rdfs:range [ rdf:type owl:Class ;
+                                                                                                        owl:unionOf ( <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter>
+                                                                                                                      <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son>
+                                                                                                                    )
+                                                                                                      ] .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy
-:isPortrayedBy rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf owl:topObjectProperty ;
-               owl:inverseOf :portrays ;
-               rdfs:domain :Character ;
-               rdfs:range :Person .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy> rdf:type owl:ObjectProperty ;
+                                                                                                rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                owl:inverseOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays> ;
+                                                                                                rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
+                                                                                                rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling
-:isSibling rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( :Brother
-                                       :Sister
-                                     )
-                       ] ;
-           rdfs:range [ rdf:type owl:Class ;
-                        owl:unionOf ( :Brother
-                                      :Sister
-                                    )
-                      ] .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isSibling> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                            rdfs:domain [ rdf:type owl:Class ;
+                                                                                                          owl:unionOf ( <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother>
+                                                                                                                        <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister>
+                                                                                                                      )
+                                                                                                        ] ;
+                                                                                            rdfs:range [ rdf:type owl:Class ;
+                                                                                                         owl:unionOf ( <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother>
+                                                                                                                       <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister>
+                                                                                                                     )
+                                                                                                       ] .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays
-:portrays rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :Actor ;
-          rdfs:range :Character .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                           rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor> ;
+                                                                                           rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#seasonFrom
-:seasonFrom rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain :Season ;
-            rdfs:range :TVSeries .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#seasonFrom> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season> ;
+                                                                                             rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy
-:writtenBy rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :Episode ;
-           rdfs:range :Writer .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> ;
+                                                                                            rdfs:range <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer> .
 
 
 #################################################################
@@ -230,31 +231,31 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender
-:gender rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Character ;
-        rdfs:range [ rdf:type rdfs:Datatype ;
-                     owl:oneOf [ rdf:type rdf:List ;
-                                 rdf:first "female"^^:gender ;
-                                 rdf:rest [ rdf:type rdf:List ;
-                                            rdf:first "male"^^:gender ;
-                                            rdf:rest rdf:nil
-                                          ]
-                               ]
-                   ] .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
+                                                                                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                                      owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                  rdf:first "female"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
+                                                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                                                             rdf:first "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
+                                                                                                                             rdf:rest rdf:nil
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                    ] .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status
-:status rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Character ;
-        rdfs:range [ rdf:type rdfs:Datatype ;
-                     owl:oneOf [ rdf:type rdf:List ;
-                                 rdf:first "alive" ;
-                                 rdf:rest [ rdf:type rdf:List ;
-                                            rdf:first "dead" ;
-                                            rdf:rest rdf:nil
-                                          ]
-                               ]
-                   ] .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
+                                                                                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                                      owl:oneOf [ rdf:type rdf:List ;
+                                                                                                                  rdf:first "alive" ;
+                                                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                                                             rdf:first "dead" ;
+                                                                                                                             rdf:rest rdf:nil
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                    ] .
 
 
 #################################################################
@@ -262,172 +263,172 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor
-:Actor rdf:type owl:Class ;
-       rdfs:subClassOf :Person ;
-       rdfs:comment "An actor of some character" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> ;
+                                                                                        rdfs:comment "An actor of some character" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Award
-:Award rdf:type owl:Class .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Award> rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother
-:Brother rdf:type owl:Class ;
-         rdfs:subClassOf :Character ;
-         rdfs:comment "A male sibling" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
+                                                                                          rdfs:comment "A male sibling" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character
-:Character rdf:type owl:Class ;
-           rdfs:subClassOf :ShowElement ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :appearsIn ;
-                             owl:someValuesFrom :TVSeries
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :hasParent ;
-                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                 owl:unionOf ( :Father
-                                                               :Mother
-                                                             )
-                                               ]
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :hasSibling ;
-                             owl:allValuesFrom [ rdf:type owl:Class ;
-                                                 owl:unionOf ( :Brother
-                                                               :Sister
-                                                             )
-                                               ]
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :isMemberOf ;
-                             owl:allValuesFrom :Faction
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :isPortrayedBy ;
-                             owl:allValuesFrom :Actor
-                           ] ;
-           rdfs:comment "A protrayed Character in a TVShow" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> rdf:type owl:Class ;
+                                                                                            rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement> ,
+                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn> ;
+                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries>
+                                                                                                            ] ,
+                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> ;
+                                                                                                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                  owl:unionOf ( <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father>
+                                                                                                                                                <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother>
+                                                                                                                                              )
+                                                                                                                                ]
+                                                                                                            ] ,
+                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> ;
+                                                                                                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                  owl:unionOf ( <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother>
+                                                                                                                                                <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister>
+                                                                                                                                              )
+                                                                                                                                ]
+                                                                                                            ] ,
+                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf> ;
+                                                                                                              owl:allValuesFrom <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction>
+                                                                                                            ] ,
+                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy> ;
+                                                                                                              owl:allValuesFrom <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Actor>
+                                                                                                            ] ;
+                                                                                            rdfs:comment "A protrayed Character in a TVShow" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter
-:Daughter rdf:type owl:Class ;
-          rdfs:subClassOf :Character ;
-          rdfs:comment "A female offspring" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
+                                                                                           rdfs:comment "A female offspring" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director
-:Director rdf:type owl:Class ;
-          rdfs:subClassOf :Person ;
-          rdfs:comment "A director of some TVSeries" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Director> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> ;
+                                                                                           rdfs:comment "A director of some TVSeries" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode
-:Episode rdf:type owl:Class ;
-         rdfs:subClassOf [ rdf:type owl:Restriction ;
-                           owl:onProperty :episodeFrom ;
-                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :Season
-                         ] .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#episodeFrom> ;
+                                                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                            owl:onClass <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season>
+                                                                                                          ] .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction
-:Faction rdf:type owl:Class ;
-         rdfs:subClassOf :ShowElement ;
-         rdfs:comment "A TVShow gang" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Faction> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement> ;
+                                                                                          rdfs:comment "A TVShow gang" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father
-:Father rdf:type owl:Class ;
-        rdfs:subClassOf :Character ;
-        rdfs:comment "A male parent" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
+                                                                                         rdfs:comment "A male parent" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother
-:Mother rdf:type owl:Class ;
-        rdfs:subClassOf :Character ;
-        rdfs:comment "A female parent" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
+                                                                                         rdfs:comment "A female parent" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnlinePlatform
-:OnlinePlatform rdf:type owl:Class ;
-                rdfs:subClassOf :Platform ;
-                rdfs:comment "A platform available through the Internet" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnlinePlatform> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform> ;
+                                                                                                 rdfs:comment "A platform available through the Internet" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner
-:Partner rdf:type owl:Class ;
-         rdfs:subClassOf :Character ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :isMarried ;
-                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :Partner
-                         ] ;
-         rdfs:comment "A person whom someone is married to" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ,
+                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried> ;
+                                                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                            owl:onClass <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Partner>
+                                                                                                          ] ;
+                                                                                          rdfs:comment "A person whom someone is married to" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person
-:Person rdf:type owl:Class ;
-        rdfs:comment "A real world person involved in the multimedia industry" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> rdf:type owl:Class ;
+                                                                                         rdfs:comment "A real world person involved in the multimedia industry" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#PhisicalPlatform
-:PhisicalPlatform rdf:type owl:Class ;
-                  rdfs:subClassOf :Platform ;
-                  rdfs:comment "A Platform available in the real world" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#PhisicalPlatform> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform> ;
+                                                                                                   rdfs:comment "A Platform available in the real world" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform
-:Platform rdf:type owl:Class ;
-          rdfs:comment "A platform to obtain/rent a TVSeries" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Platform> rdf:type owl:Class ;
+                                                                                           rdfs:comment "A platform to obtain/rent a TVSeries" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Producer
-:Producer rdf:type owl:Class ;
-          rdfs:subClassOf :Person ;
-          rdfs:comment "A producer of some TVSeries" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Producer> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> ;
+                                                                                           rdfs:comment "A producer of some TVSeries" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season
-:Season rdf:type owl:Class ;
-        rdfs:subClassOf [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasEpisode ;
-                          owl:someValuesFrom :Episode
-                        ] ;
-        rdfs:comment "A series of episodes grouped in a Season" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode> ;
+                                                                                                           owl:someValuesFrom <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Episode>
+                                                                                                         ] ;
+                                                                                         rdfs:comment "A series of episodes grouped in a Season" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement
-:ShowElement rdf:type owl:Class ;
-             rdfs:comment "An element part of a TVShow" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#ShowElement> rdf:type owl:Class ;
+                                                                                              rdfs:comment "An element part of a TVShow" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister
-:Sister rdf:type owl:Class ;
-        rdfs:subClassOf :Character ;
-        rdfs:comment "A female sibling" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
+                                                                                         rdfs:comment "A female sibling" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son
-:Son rdf:type owl:Class ;
-     rdfs:subClassOf :Character ;
-     rdfs:comment "A male offspring" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
+                                                                                      rdfs:comment "A male offspring" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries
-:TVSeries rdf:type owl:Class ;
-          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasSeason ;
-                            owl:someValuesFrom :Season
-                          ] ;
-          rdfs:comment "An audiovisual program" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#TVSeries> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason> ;
+                                                                                                             owl:someValuesFrom <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season>
+                                                                                                           ] ;
+                                                                                           rdfs:comment "An audiovisual program" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer
-:Writer rdf:type owl:Class ;
-        rdfs:subClassOf :Person ;
-        rdfs:comment "A writer of the script of some TVSeries" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Writer> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Person> ;
+                                                                                         rdfs:comment "A writer of the script of some TVSeries" .
 
 
 #################################################################
@@ -435,158 +436,158 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Abel_Teller
-:Abel_Teller rdf:type owl:NamedIndividual ;
-             :hasParent :Jax ;
-             :gender "male"^^:gender .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Abel_Teller> rdf:type owl:NamedIndividual ;
+                                                                                              <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> ;
+                                                                                              <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Allen_Coulter
-:Allen_Coulter rdf:type owl:NamedIndividual .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Allen_Coulter> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Alvarez
-:Alvarez rdf:type owl:NamedIndividual ;
-         :isMemberOf :Mayans ;
-         :gender "male"^^:gender ;
-         :status "alive" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Alvarez> rdf:type owl:NamedIndividual ;
+                                                                                          <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMemberOf> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mayans> ;
+                                                                                          <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
+                                                                                          <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "alive" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam
-:Charlie_Hunnam rdf:type owl:NamedIndividual .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow
-:Clay_Morrow rdf:type owl:NamedIndividual ;
-             :isMarried :Gemma_Teller_Morrow ;
-             :gender "male"^^:gender ;
-             :status "dead" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow> rdf:type owl:NamedIndividual ;
+                                                                                              <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow> ;
+                                                                                              <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
+                                                                                              <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "dead" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Fun_Town
-:Fun_Town rdf:type owl:NamedIndividual .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Fun_Town> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow
-:Gemma_Teller_Morrow rdf:type owl:NamedIndividual ;
-                     :gender "female"^^:gender ;
-                     :status "dead" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow> rdf:type owl:NamedIndividual ;
+                                                                                                      <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "female"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
+                                                                                                      <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "dead" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Giving_Back
-:Giving_Back rdf:type owl:NamedIndividual .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Giving_Back> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax
-:Jax rdf:type owl:NamedIndividual ;
-     :appearsIn :Pilot ;
-     :hasParent :Gemma_Teller_Morrow ,
-                :John_Teller ;
-     :isPortrayedBy :Charlie_Hunnam ;
-     :gender "male"^^:gender ;
-     :status "dead" ;
-     rdfs:sameAs "https://dbpedia.org/page/Charlie_Hunnam" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> rdf:type owl:NamedIndividual ;
+                                                                                      <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#appearsIn> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot> ;
+                                                                                      <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow> ,
+                                                                                                                                                                                  <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller> ;
+                                                                                      <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Charlie_Hunnam> ;
+                                                                                      <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
+                                                                                      <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "dead" ;
+                                                                                      rdfs:sameAs "https://dbpedia.org/page/Charlie_Hunnam" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller
-:John_Teller rdf:type owl:NamedIndividual ;
-             :gender "male"^^:gender ;
-             :status "dead" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#John_Teller> rdf:type owl:NamedIndividual ;
+                                                                                              <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
+                                                                                              <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "dead" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter
-:Kurt_Sutter rdf:type owl:NamedIndividual ;
-             :hasWrited :Pilot ;
-             rdfs:sameAs "https://dbpedia.org/page/Kurt_Sutter" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter> rdf:type owl:NamedIndividual ;
+                                                                                              <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasWrited> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot> ;
+                                                                                              rdfs:sameAs "https://dbpedia.org/page/Kurt_Sutter" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mayans
-:Mayans rdf:type owl:NamedIndividual .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mayans> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Netflix
-:Netflix rdf:type owl:NamedIndividual ,
-                  :OnlinePlatform ;
-         :hasAvailable :SonsOfAnarchy .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Netflix> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#OnlinePlatform> ;
+                                                                                          <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasAvailable> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SonsOfAnarchy> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Otto_Delaney
-:Otto_Delaney rdf:type owl:NamedIndividual ;
-              :isPortrayedBy :Kurt_Sutter ;
-              :gender "male"^^:gender ;
-              :status "dead" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Otto_Delaney> rdf:type owl:NamedIndividual ;
+                                                                                               <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isPortrayedBy> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter> ;
+                                                                                               <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
+                                                                                               <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "dead" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Patch_Over
-:Patch_Over rdf:type owl:NamedIndividual .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Patch_Over> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot
-:Pilot rdf:type owl:NamedIndividual ;
-       :directedBy :Allen_Coulter ;
-       :hasCast :Gemma_Teller_Morrow .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot> rdf:type owl:NamedIndividual ;
+                                                                                        <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#directedBy> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Allen_Coulter> ;
+                                                                                        <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Ron_Perlman
-:Ron_Perlman rdf:type owl:NamedIndividual ;
-             :portrays :Clay_Morrow ;
-             rdfs:sameAs "https://dbpedia.org/page/Ron_Perlman" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Ron_Perlman> rdf:type owl:NamedIndividual ;
+                                                                                              <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#portrays> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Clay_Morrow> ;
+                                                                                              rdfs:sameAs "https://dbpedia.org/page/Ron_Perlman" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SAMCRO
-:SAMCRO rdf:type owl:NamedIndividual ;
-        :hasMember :Gemma_Teller_Morrow ,
-                   :Jax ,
-                   :Tara_Knowles .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SAMCRO> rdf:type owl:NamedIndividual ;
+                                                                                         <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasMember> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow> ,
+                                                                                                                                                                                     <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> ,
+                                                                                                                                                                                     <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season_1
-:Season_1 rdf:type owl:NamedIndividual ;
-          :hasEpisode :Fun_Town ,
-                      :Giving_Back ,
-                      :Patch_Over ,
-                      :Pilot ,
-                      :Seeds .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season_1> rdf:type owl:NamedIndividual ;
+                                                                                           <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasEpisode> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Fun_Town> ,
+                                                                                                                                                                                        <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Giving_Back> ,
+                                                                                                                                                                                        <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Patch_Over> ,
+                                                                                                                                                                                        <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Pilot> ,
+                                                                                                                                                                                        <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Seeds> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Seeds
-:Seeds rdf:type owl:NamedIndividual ;
-       :hasCast :Gemma_Teller_Morrow ,
-                :Jax ,
-                :Tara_Knowles ;
-       :writtenBy :Kurt_Sutter .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Seeds> rdf:type owl:NamedIndividual ;
+                                                                                        <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasCast> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Gemma_Teller_Morrow> ,
+                                                                                                                                                                                  <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> ,
+                                                                                                                                                                                  <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles> ;
+                                                                                        <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#writtenBy> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Kurt_Sutter> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SonsOfAnarchy
-:SonsOfAnarchy rdf:type owl:NamedIndividual ;
-               :hasSeason :Season_1 .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#SonsOfAnarchy> rdf:type owl:NamedIndividual ;
+                                                                                                <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSeason> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Season_1> .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles
-:Tara_Knowles rdf:type owl:NamedIndividual ;
-              :isMarried :Jax ;
-              :gender "female"^^:gender ;
-              :status "dead" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Tara_Knowles> rdf:type owl:NamedIndividual ;
+                                                                                               <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#isMarried> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> ;
+                                                                                               <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "female"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
+                                                                                               <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "dead" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller
-:Thomas_Teller rdf:type owl:NamedIndividual ;
-               :hasSibling :Jax ;
-               :gender "male"^^:gender ;
-               :status "dead" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller> rdf:type owl:NamedIndividual ;
+                                                                                                <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> ;
+                                                                                                <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
+                                                                                                <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "dead" .
 
 
 ###  http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller_II
-:Thomas_Teller_II rdf:type owl:NamedIndividual ;
-                  :hasParent :Jax ;
-                  :gender "male"^^:gender ;
-                  :status "alive" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Thomas_Teller_II> rdf:type owl:NamedIndividual ;
+                                                                                                   <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Jax> ;
+                                                                                                   <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
+                                                                                                   <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#status> "alive" .
 
 
 #################################################################
 #    Annotations
 #################################################################
 
-:gender rdfs:comment "A type to define the gender of a character" .
+<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> rdfs:comment "A type to define the gender of a character" .
 
 
 #################################################################
@@ -604,18 +605,18 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSibling ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
                                                                            ] ;
@@ -625,7 +626,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                                                                         <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
                                                                                                                                      rdf:first <urn:swrl:var#g> ;
                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                                rdf:first "male"^^:gender ;
+                                                                                                                                                rdf:first "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                                                                                                 rdf:rest rdf:nil
                                                                                                                                               ]
                                                                                                                                    ]
@@ -637,7 +638,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Brother ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Brother> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
                                                      ] ;
                                            rdf:rest rdf:nil
@@ -647,18 +648,18 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasParent ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
                                                                            ] ;
@@ -668,7 +669,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                                                                         <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
                                                                                                                                      rdf:first <urn:swrl:var#g> ;
                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                                rdf:first "female"^^:gender ;
+                                                                                                                                                rdf:first "female"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                                                                                                 rdf:rest rdf:nil
                                                                                                                                               ]
                                                                                                                                    ]
@@ -680,7 +681,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Daughter ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Daughter> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
                                                      ] ;
                                            rdf:rest rdf:nil
@@ -690,18 +691,18 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasParent ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
                                                                            ] ;
@@ -711,7 +712,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                                                                         <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
                                                                                                                                      rdf:first <urn:swrl:var#g> ;
                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                                rdf:first "male"^^:gender ;
+                                                                                                                                                rdf:first "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                                                                                                 rdf:rest rdf:nil
                                                                                                                                               ]
                                                                                                                                    ]
@@ -723,7 +724,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Son ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Son> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
                                                      ] ;
                                            rdf:rest rdf:nil
@@ -733,18 +734,18 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasParent ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
                                                                            ] ;
@@ -754,7 +755,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                                                                         <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
                                                                                                                                      rdf:first <urn:swrl:var#g> ;
                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                                rdf:first "female"^^:gender ;
+                                                                                                                                                rdf:first "female"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                                                                                                 rdf:rest rdf:nil
                                                                                                                                               ]
                                                                                                                                    ]
@@ -766,7 +767,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Mother ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Mother> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
                                                      ] ;
                                            rdf:rest rdf:nil
@@ -776,18 +777,18 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasParent ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasParent> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
                                                                            ] ;
@@ -797,7 +798,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                                                                         <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
                                                                                                                                      rdf:first <urn:swrl:var#g> ;
                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                                rdf:first "male"^^:gender ;
+                                                                                                                                                rdf:first "male"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                                                                                                 rdf:rest rdf:nil
                                                                                                                                               ]
                                                                                                                                    ]
@@ -809,7 +810,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Father ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Father> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
                                                      ] ;
                                            rdf:rest rdf:nil
@@ -819,18 +820,18 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Character> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSibling ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#hasSibling> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :gender ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
                                                                            ] ;
@@ -840,7 +841,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                                                                         <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
                                                                                                                                      rdf:first <urn:swrl:var#g> ;
                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                                rdf:first "female"^^:gender ;
+                                                                                                                                                rdf:first "female"^^<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#gender> ;
                                                                                                                                                 rdf:rest rdf:nil
                                                                                                                                               ]
                                                                                                                                    ]
@@ -852,7 +853,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Sister ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#Sister> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
                                                      ] ;
                                            rdf:rest rdf:nil

@@ -1,6 +1,7 @@
-<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#eg:author> "Àngel Mariages" .
-<http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12> <http://www.w3.org/2000/01/rdf-schema#label> "Sons of Anarchy Ontology" .
+<https://w3id.org/angelmariages-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/angelmariages-ontology> <http://www.semanticweb.org/angelmariages/ontologies/2022/3/untitled-ontology-12#eg:author> "Àngel Mariages" .
+<https://w3id.org/angelmariages-ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Sons of Anarchy Ontology" .
+<https://w3id.org/angelmariages-ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Sons of Anarchy Ontology" .
 # 
 # 
 # #################################################################
